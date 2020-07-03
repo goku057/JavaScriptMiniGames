@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games with JS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <div class="container-1">
+        <h2>Challange 1! Your age in days</h2>
+        <div class="flex-box-container-1">
+            
+            <div><button class="btn btn-primary" onclick="ageInDays()" >Click Me</button></div>
+            <div><button class="btn btn-danger" onclick= "reset()">Reset</button></div>   
+        </div>
+        <div class="flex-box-container-1">
+            <div id="flex-box-result"></div>
+        </div>
+    </div>
+    <div class="container-2" id = "con-2">
+        <h2>Challange 2! Generate Cattos</h2>
+        <div><button class="btn btn-success" onclick="genCatto()">Generate Cattos</button>
+        <button class="btn btn-danger" onclick="resetCatto()">Clear All Cattos</button></div>
+        <div class="flex-box-container-2" id="cat-gen">
+        </div> 
+    </div>
+    <div class = "container-3">
+        <h2>Challange 3! ROCK PAPER SCISSORS!!!</h2>
+        <div class="flex-box-rps" id="flex-box-rps-id">
+            <img id="rock" src="static/images/rock.png" alt="" height="150" width="150" onclick="rps(this)">
+            <img id="paper" src="static/images/paper.png" alt="" height="150" width="150" onclick="rps(this)">
+            <img id="scissor" src="static/images/scissor.png" alt="" height="150" width="150" onclick="rps(this)">
+        </div>
+    </div>
+    <div class="container-4">
+        <h2>Challange 4!Change The colour of the buttons!!!</h2>
+        <div class="flex-box-pick-color">
+            <form action="">
+                <select name="backdrop" id="background" onchange="buttonColorChange(this)">
+                    <option value="random">Random</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                    <option value="reset">Reset</option>
+                </select>
+            </form>
+            <button class="btn btn-primary">SUP</button>
+            <button class="btn btn-success">SUP</button>
+            <button class="btn btn-warning">SUP</button>
+            <button class="btn btn-danger">SUP</button>
+        </div>
+    </div>
+    <div class="container-5">
+        <h2>Challange 5! Blackjack 21 !!!</h2>
+        <h3 id="blackjack-result">Let's PLAY!!!</h3>
+        <div class="flex-blackjack-row-1">
+            <div id="player-box" class="img-box">
+                <h2>You: <span id="player-blackjack-result">0</span></h2>
+            </div>
+            <div id="dealer-box" class="img-box">
+                <h2>Dealer: <span id="dealer-blackjack-result">0</span></h2>
+            </div>
+        </div>
+        <div class="flex-blackjack-row-2">
+            <div>
+                <button id="hit-button" class="btn btn-success mr-2">HIT</button>
+                <button id="stall-button" class="btn btn-warning mr-2">STALL</button>
+                <button id="deal-button" class="btn btn-danger">DEAL</button>
+            </div>
+        </div>
+        <div class="flex-blackjack-row-3">
+            <table>
+                <tr>
+                    <th>WINS</th>
+                    <th>LOSS</th>
+                    <th>DRAWS</th>
+                </tr>
+                <tr>
+                    <td><span id="wins"> 0</span></td>
+                    <td><span id="loss"> 0</span></td>
+                    <td><span id="draws"> 0</span></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<script src="static/js/script.js"></script>
+            <script src="home.js"></script>
+
+            
+            

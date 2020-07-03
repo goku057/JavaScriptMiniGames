@@ -1,0 +1,74 @@
+.container-1 ,.container-3, .container-4{
+    border: 1px solid black;
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.container-5{
+    border: 1px solid black;
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+}
+.flex-box-container-1, .flex-box-container-2, .flex-box-pick-color,.flex-blackjack-row-1,.flex-blackjack-row-2,.flex-blackjack-row-3{
+    display: flex;
+    border: 1px solid black;
+    padding: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.flex-blackjack-row-1 ,.flex-blackjack-row-2{
+    background: url("https://mk0gamesnetentcxytko.kinstacdn.com/wp-content/uploads/2018/09/blackjack_background.jpg");
+    color: ivory;
+}
+
+.flex-blackjack-row-1 div{
+    border: solid black 1px;
+    padding: 10px;
+    min-height: 350px;
+    flex: 1;
+
+}
+
+.flex-box-container-1 div{
+    padding: 10px;
+    border: 1px solid black;
+    align-items: center;
+}
+.container-2{
+    border: 1px solid yellowgreen;
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.flex-box-container-2 img{
+    border: green solid 1px;
+    margin: 3px;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 1);
+}
+.flex-box-rps img{
+    margin: 10px;
+}
+.flex-box-rps img:hover{
+    box-shadow: 0px 10px 50px rgb(58, 76, 233,1);
+}
+
+.flex-box-rps{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;   
+}
+
+table,th,td{
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.img-box img{
+    margin: 10px;
+    
+}
